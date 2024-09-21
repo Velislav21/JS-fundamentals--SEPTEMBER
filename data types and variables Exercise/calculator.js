@@ -1,7 +1,7 @@
-function calc (num, operator, num2){
+function calc(num, num2, operator) {
 
-    let result = 0 ;
-    switch (operator){
+    let result = 0;
+    switch (operator) {
         case "+": result = num + num2;
             break;
         case "-": result = num - num2;
@@ -10,11 +10,11 @@ function calc (num, operator, num2){
             break;
         case "/": result = num / num2;
             break;
+        case "%": result = num % num2;
+            break;
+        case "**": result = num ** num2;
+            break;
     }
-    console.log(result.toFixed(2))
+    console.log(result)
 }
-calc(25.5,
-
-    '-',
-    
-    3)
+calc(5, 6, '+')
